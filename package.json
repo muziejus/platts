@@ -1,0 +1,13 @@
+{
+  "name": "platts",
+  "version": "0.0.1",
+  "description": "A Dictionary of Urdū, Classical Hindī, and English but as a Service",
+  "main": "src/index.js",
+  "author": "Moacir P. de Sá Pereira <moacir.p@columbia.edu> (http://moacir.com)",
+  "repository": "https://github.com/muziejus/platts.git",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
