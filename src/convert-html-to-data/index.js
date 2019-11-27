@@ -18,11 +18,9 @@ const cheerio = require("cheerio");
  */
 
 const file = fs.readFileSync("./original-wget/page-1.html", { encoding: "UTF-8" });
-const $ = cheerio.load(file);
-// const firstWord = $(".hw_result div").first().text();
-// console.log(firstWord);
-$(".hw_result div").each((index, element) => {
-  const el = cheerio.load(element);
-  const hw = el("hw");
+const htmlPage = cheerio.load(file);
+htmlPage(".hw_result div").each((index, element) => {
+  const $ = cheerio.load(element);
+  const hw = $("hw");
   console.log("HEADWORD: ", hw.text());
 });
